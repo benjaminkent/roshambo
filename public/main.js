@@ -1,4 +1,7 @@
-const playerOnePickRock = event => {};
+const playerOnePickRock = event => {
+  //remember that player one chose rock
+  if 
+};
 
 const playerOnePickPaper = event => {};
 

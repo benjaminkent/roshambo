@@ -14,8 +14,8 @@ body {
 header {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
-  font-size: 2rem;
+  padding: 10px 0;
+  font-size: 3rem;
   font-family: "Pacifico", cursive;
   background-image: url(/images/header-background.jpeg);
 }
@@ -32,8 +32,12 @@ aside {
   align-items: center;
 }
 
+h2 {
+  margin: 0;
+}
+
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 ul {
@@ -48,7 +52,12 @@ li {
 }
 
 button {
-  height: 1.5rem;
-  width: 5rem;
+  height: 2rem;
+  width: 6rem;
   font-size: 0.8rem;
+  background-color: #011627;
+  color: #f0f0c9;
+  border: 1px solid #f0f0c9;
+  border-radius: 5px;
+  margin: 5px 0;
 }
