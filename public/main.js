@@ -4,6 +4,7 @@ let playerTwoChoice = ""
 const playerOneClickRock = event => {
   playerOneChoice = "rock"
   console.log(playerOneChoice)
+  console.log(playerTwoChoice)
 }
 
 const playerOneClickPaper = event => {
