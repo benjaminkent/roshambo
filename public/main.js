@@ -42,6 +42,7 @@ const winnerDeclared = () => {
 const playerOneClickRock = event => {
   playerOneChoice = 'rock'
   document.querySelector('.player-1').classList.add('remove-choices')
+  document.querySelector('.player-1-choice').classList.add('chosen-text')
   winnerDeclared()
 
 }
@@ -49,30 +50,39 @@ const playerOneClickRock = event => {
 const playerOneClickPaper = event => {
   playerOneChoice = 'paper'
   document.querySelector('.player-1').classList.add('remove-choices')
+  document.querySelector('.player-1-choice').classList.add('chosen-text')
+
   winnerDeclared()
 }
 
 const playerOneClickScissors = event => {
   playerOneChoice = 'scissors'
   document.querySelector('.player-1').classList.add('remove-choices')
+  document.querySelector('.player-1-choice').classList.add('chosen-text')
+
   winnerDeclared()
 }
 
 const playerTwoClickRock = event => {
   playerTwoChoice = 'rock'
   document.querySelector('.player-2').classList.add('remove-choices')
+  document.querySelector('.player-2-choice').classList.add('chosen-text')
   winnerDeclared()
 }
 
 const playerTwoClickPaper = event => {
   playerTwoChoice = 'paper'
   document.querySelector('.player-2').classList.add('remove-choices')
+  document.querySelector('.player-2-choice').classList.add('chosen-text')
+
   winnerDeclared()
 }
 
 const playerTwoClickScissors = event => {
   playerTwoChoice = 'scissors'
   document.querySelector('.player-2').classList.add('remove-choices')
+  document.querySelector('.player-2-choice').classList.add('chosen-text')
+
   winnerDeclared()
 }
 

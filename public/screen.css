@@ -20,10 +20,14 @@ header {
   background-image: url(/images/header-background.jpeg);
 }
 
+section {
+  display: flex;
+  justify-content: center;
+}
+
 main {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
 }
 
 aside {
@@ -38,6 +42,7 @@ h2 {
 
 h3 {
   font-size: 2.5rem;
+  margin-top: 50px;
 }
 
 ul {
@@ -67,33 +72,60 @@ footer {
   display: none;
 }
 
+aside p {
+  display: none;
+  text-align: center;
+  width: 75%;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .remove-choices button {
   display: none;
 }
 
+.chosen-text {
+  display: block;
+}
+
+
 .replay-button {
   width: 200px;
   height: 200px;
-    background: linear-gradient(90deg, gold 50%, transparent 50%), 
-                linear-gradient(90deg, gold 50%, transparent 50%), 
-                linear-gradient(0deg, gold 50%, transparent 50%), 
-                linear-gradient(0deg, gold 50%, transparent 50%);
-    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
-    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
-    border-radius: 5px;
-    animation: dash 5s linear infinite;
-    border: none;
-    font-size: 
-}
+  border: none;
+  font-size: 1.5rem;
+  background-image: url(/images/cat.gif);
+  background-size: 200px 200px;
+  color: #011627;
 
-@keyframes dash {
-    to {
-        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
-}}
+}
 
 .add-replay {
   display: flex;
   justify-content: center;
   padding-top: 75px;
+}  
+
+@media (max-width: 700px) {
+  header {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .add-replay {
+    padding-top: 25px;
+  }
 }
