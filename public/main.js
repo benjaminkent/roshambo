@@ -1,17 +1,26 @@
-const playerOnePickRock = event => {
-  //remember that player one chose rock
-  if 
+const playerOneChooseRock = event => {
+  console.log("rock");
 };
 
-const playerOnePickPaper = event => {};
+const playerOneChoosePaper = event => {
+  console.log("paper");
+};
 
-const playerOnePickScissors = event => {};
+const playerOneChooseScissors = event => {
+  console.log("scissors");
+};
 
-const playerTwoPickRock = event => {};
+const playerTwoChooseRock = event => {
+  console.log("rock");
+};
 
-const playerTwoPickPaper = event => {};
+const playerTwoChoosePaper = event => {
+  console.log("paper");
+};
 
-const playerTwoPickScissors = event => {};
+const playerTwoChooseScissors = event => {
+  console.log("scissors");
+};
 
 const main = () => {
   // remember that player 1 chose rock
@@ -19,22 +28,22 @@ const main = () => {
   // log what player two choice is
   // check if both players have made a choice
   let playerOneRock = document.querySelector(".player-1 .rock");
-  playerOneRock.addEventListener("click", playerOnePickRock);
+  playerOneRock.addEventListener("click", playerOneChooseRock);
 
   let playerOnePaper = document.querySelector(".player-1 .paper");
-  playerOnePaper.addEventListener("click", playerOnePickPaper);
+  playerOnePaper.addEventListener("click", playerOneChoosePaper);
 
   let playerOneScissors = document.querySelector(".player-1 .scissors");
-  playerOneScissors.addEventListener("click", playerOnePickScissors);
+  playerOneScissors.addEventListener("click", playerOneChooseScissors);
 
   let playerTwoRock = document.querySelector(".player-2 .rock");
-  playerTwoRock.addEventListener("click", playerTwoPickRock);
+  playerTwoRock.addEventListener("click", playerTwoChooseRock);
 
   let playerTwoPaper = document.querySelector(".player-2 .paper");
-  playerTwoPaper.addEventListener("click", playerTwoPickPaper);
+  playerTwoPaper.addEventListener("click", playerTwoChoosePaper);
 
   let playerTwoScissors = document.querySelector(".player-2 .scissors");
-  playerTwoScissors.addEventListener("click", playerTwoPickScissors);
+  playerTwoScissors.addEventListener("click", playerTwoChooseScissors);
 };
 
 document.addEventListener("DOMContentLoaded", main);
