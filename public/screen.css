@@ -60,4 +60,9 @@ button {
   border: 1px solid #f0f0c9;
   border-radius: 5px;
   margin: 5px 0;
+  outline: none;
+}
+
+.remove-choices button {
+  display: none;
 }
