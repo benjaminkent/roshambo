@@ -64,11 +64,36 @@ button {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  padding-top: 75px;
+  display: none;
 }
 
 .remove-choices button {
   display: none;
+}
+
+.replay-button {
+  width: 200px;
+  height: 200px;
+    background: linear-gradient(90deg, gold 50%, transparent 50%), 
+                linear-gradient(90deg, gold 50%, transparent 50%), 
+                linear-gradient(0deg, gold 50%, transparent 50%), 
+                linear-gradient(0deg, gold 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    border-radius: 5px;
+    animation: dash 5s linear infinite;
+    border: none;
+    font-size: 
+}
+
+@keyframes dash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+}}
+
+.add-replay {
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
 }

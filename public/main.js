@@ -33,12 +33,17 @@ const winnerDeclared = () => {
       winDeclareStatement.textContent = "There is a tie!"
     }
   }
+
+  if (playerOneChoice !== '' && playerTwoChoice !== '') {
+    document.querySelector('.replay').classList.add('add-replay')
+  }
 }
 
 const playerOneClickRock = event => {
   playerOneChoice = 'rock'
   document.querySelector('.player-1').classList.add('remove-choices')
   winnerDeclared()
+
 }
 
 const playerOneClickPaper = event => {
@@ -89,6 +94,10 @@ const main = () => {
 
   let playerTwoScissors = document.querySelector('.player-2 .scissors')
   playerTwoScissors.addEventListener('click', playerTwoClickScissors)
+
+  document.querySelector('footer button').addEventListener('click', () => {
+    document.location = '/'
+  })
 }
 
 document.addEventListener('DOMContentLoaded', main)
