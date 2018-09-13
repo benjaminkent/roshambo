@@ -63,6 +63,12 @@ button {
   outline: none;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
+}
+
 .remove-choices button {
   display: none;
 }
