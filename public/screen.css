@@ -90,6 +90,8 @@ div {
 
 .chosen-text {
   display: block;
+  height: 2rem;
+  width: 6rem;
 }
 
 
@@ -117,6 +119,7 @@ div {
 
   h3 {
     font-size: 1.7rem;
+    margin: 15px 0 25px 0;
   }
 
   h2 {
@@ -127,5 +130,10 @@ div {
 @media (max-height: 600px) {
   .add-replay {
     padding-top: 25px;
+  }
+  
+  h3 {
+    font-size: 1.7rem;
+    margin: 15px 0 25px 0;
   }
 }
