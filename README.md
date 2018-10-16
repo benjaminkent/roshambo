@@ -1,6 +1,6 @@
 # Roshambo
 
-<img src="./public/roshambo" />
+<img src="./public/roshambo.png" />
 
 A game of Rock, Paper, Scissors.
 
